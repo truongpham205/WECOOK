@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#013b63"
+    tools:context=".telephone">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/logo"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/fstTxt"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#00FFFF"
+        android:fontFamily="@font/alex_brush"
+        android:text="Gọi chúng tôi: 0787132073"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/mblTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="30dp"
+        android:hint="Số điện thoại"
+        android:textColorHint="#00FFFF"
+        android:ems="10">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Call"
+        android:textColor="#013b63"
+        app:backgroundTint="#00FFFF" />
+</LinearLayout>
