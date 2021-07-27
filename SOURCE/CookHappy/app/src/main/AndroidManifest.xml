@@ -13,6 +13,9 @@
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -21,6 +24,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CookHappy">
+        <receiver
+            android:name=".receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="network_change"/>
+            </intent-filter>
+        </receiver>
         <activity android:name=".activity.viewmonandd"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -44,9 +53,7 @@
         <activity android:name=".nav">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
-
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <data android:mimeType="message/rfc822" />
             </intent-filter>
         </activity>
@@ -54,8 +61,10 @@
         <activity android:name=".activity.Sflash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>
         </activity>
         <activity android:name=".activity.MainActivity" />
