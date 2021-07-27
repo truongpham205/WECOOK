@@ -1,6 +1,4 @@
-package com.example.cookhappy;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.cookhappy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.R;
+import com.example.cookhappy.utils.DBHelper;
 
 public class Signup extends AppCompatActivity {
      EditText username, password, confirmpassword;
@@ -39,7 +42,7 @@ public class Signup extends AppCompatActivity {
                             Boolean insert = DB.insertData(user, pass);
                             if(insert==true){
                                 Toast.makeText(Signup.this,"Đăng kí thành công", Toast.LENGTH_SHORT).show();
-                                Intent i = new Intent(getApplicationContext(),Login.class);
+                                Intent i = new Intent(getApplicationContext(), Home.Login.class);
                                 startActivity(i);
 
                             }else{

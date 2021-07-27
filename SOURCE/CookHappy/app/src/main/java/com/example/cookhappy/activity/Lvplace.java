@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,11 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.adapter.MonanDD;
+import com.example.cookhappy.R;
+import com.example.cookhappy.adapter.Buaanadapter;
+import com.example.cookhappy.models.BuaAn;
 
 import java.util.ArrayList;
 
@@ -74,7 +79,7 @@ public class Lvplace extends AppCompatActivity implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent=new Intent(this,viewthucdon.class);
+        Intent intent=new Intent(this, viewthucdon.class);
         startActivity(intent);
     }
 }

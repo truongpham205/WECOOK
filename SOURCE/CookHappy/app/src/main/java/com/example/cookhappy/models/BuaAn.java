@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.models;
 
 public class BuaAn {
     public String name;

@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
+import com.example.cookhappy.R;
 
 public class telephone extends AppCompatActivity {
     private EditText txtPhone;

@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cookhappy.R;
+import com.example.cookhappy.models.BuaAn;
 
 import java.util.ArrayList;
 import java.util.List;

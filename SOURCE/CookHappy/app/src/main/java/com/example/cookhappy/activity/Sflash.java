@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.R;
 
 public class Sflash extends AppCompatActivity implements Animation.AnimationListener {
     RelativeLayout layout;
@@ -35,7 +37,7 @@ public class Sflash extends AppCompatActivity implements Animation.AnimationList
 
     @Override
     public void onAnimationEnd(Animation animation) {
-        Intent i = new Intent(getApplicationContext(),MainActivity.class);
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
     }
 

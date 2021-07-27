@@ -1,8 +1,10 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.R;
 
 public class capnhat extends AppCompatActivity {
 

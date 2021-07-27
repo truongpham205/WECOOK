@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#013b63"
-    tools:context=".telephone">
+    tools:context=".activity.telephone">
 
     <ImageView
         android:layout_width="120dp"

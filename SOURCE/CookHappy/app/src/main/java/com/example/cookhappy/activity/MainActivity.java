@@ -1,11 +1,13 @@
-package com.example.cookhappy;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.cookhappy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.R;
 
 public class MainActivity extends AppCompatActivity {
     Button buttonlogin;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
-                i.setClass(MainActivity.this,Login.class);
+                i.setClass(MainActivity.this, Home.Login.class);
                 startActivity(i);
             }
         });
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent y = new Intent();
-                y.setClass(MainActivity.this,Signup.class);
+                y.setClass(MainActivity.this, Signup.class);
                 startActivity(y);
             }
         });

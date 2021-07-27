@@ -12,6 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.cookhappy.activity.Home;
+import com.example.cookhappy.activity.MapsActivity;
+import com.example.cookhappy.activity.telephone;
+import com.example.cookhappy.adapter.MonanDD;
+
 public class nav extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
@@ -25,10 +30,10 @@ public class nav extends AppCompatActivity {
 
     //Menu tìm kiếm: theo Bữa sáng, trức, tối.
     public  void clickchebien(View view){
-        redirectActivity(this,Lvplace.class);
+        redirectActivity(this, Home.Lvplace.class);
     }
     public  void clickdd(View view){
-        redirectActivity(this,MonanDD.class);
+        redirectActivity(this, MonanDD.class);
     }
     public void clicksearch(View view){
         //Call to quanngon on internet.
@@ -64,18 +69,18 @@ public class nav extends AppCompatActivity {
     }
     public void ClickDashboard(View view){
         //Redirect activity to dashboard
-        redirectActivity(this,Lvplace.class);
+        redirectActivity(this, Home.Lvplace.class);
 
     }
     public void Clickggmap(View view){
         //Redirect activity to dashboard
-        redirectActivity(this,MapsActivity.class);
+        redirectActivity(this, MapsActivity.class);
 
     }
     public  void ClickEmail(View view){
         redirectActivity(this);
     }
-    public void  Clickphone(View view){redirectActivity(this,telephone.class);}
+    public void  Clickphone(View view){redirectActivity(this, telephone.class);}
 
 
     private void redirectActivity(nav nav) {

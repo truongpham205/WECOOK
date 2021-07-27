@@ -1,9 +1,13 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+
+import com.example.cookhappy.R;
+import com.example.cookhappy.adapter.BuaAnDetail_Adapter;
+import com.example.cookhappy.models.BuaAn;
 
 import java.util.ArrayList;
 
@@ -16,7 +20,7 @@ public class viewthucdon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewthucdon);
         viewPager=(ViewPager) findViewById(R.id.pager);
-        adapter=new BuaAnDetail_Adapter(this,Lvplace.arrTraicay);
+        adapter=new BuaAnDetail_Adapter(this, Home.Lvplace.arrTraicay);
         viewPager.setAdapter(adapter);
     }
 }

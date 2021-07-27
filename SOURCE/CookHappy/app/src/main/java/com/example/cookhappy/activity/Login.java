@@ -1,6 +1,4 @@
-package com.example.cookhappy;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.cookhappy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.R;
+import com.example.cookhappy.nav;
+import com.example.cookhappy.utils.DBHelper;
 
 public class Login extends AppCompatActivity {
     EditText username,password;
@@ -34,7 +38,7 @@ public class Login extends AppCompatActivity {
                     Boolean checkuserpass = DB.checkusernamepassword(user,pass);
                     if(checkuserpass== true){
                         Toast.makeText(Login.this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
-                        Intent e = new Intent(getApplicationContext(),nav.class);
+                        Intent e = new Intent(getApplicationContext(), nav.class);
                         startActivity(e);
                     }else {
                         Toast.makeText(Login.this,"Đăng nhập thất bại ",Toast.LENGTH_SHORT).show();

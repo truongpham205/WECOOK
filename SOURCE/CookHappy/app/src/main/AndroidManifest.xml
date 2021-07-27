@@ -21,7 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CookHappy">
-        <activity android:name=".viewmonandd"></activity>
+        <activity android:name=".activity.viewmonandd"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -35,14 +35,12 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".activity.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".BuaAnDetail_Adapter" />
-        <activity android:name=".MonanDD" />
-        <activity android:name=".capnhat" />
-        <activity android:name=".viewthucdon" />
-        <activity android:name=".telephone" />
-        <activity android:name=".infofood" />
+        <activity android:name=".adapter.BuaAnDetail_Adapter" />
+        <activity android:name=".adapter.MonanDD" />
+        <activity android:name=".activity.viewthucdon" />
+        <activity android:name=".activity.telephone" />
         <activity android:name=".nav">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -52,18 +50,17 @@
                 <data android:mimeType="message/rfc822" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lvplace" />
-        <activity android:name=".Sflash">
+        <activity android:name=".activity.Home$Lvplace" />
+        <activity android:name=".activity.Sflash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Signup" />
-        <activity android:name=".Login" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.Signup" />
+        <activity android:name=".activity.Home$Login" />
 
         <meta-data
             android:name="preloaded_fonts"

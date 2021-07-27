@@ -1,9 +1,10 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.cookhappy.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

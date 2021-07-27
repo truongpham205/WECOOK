@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -13,6 +13,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
+import com.example.cookhappy.R;
+import com.example.cookhappy.utils.SQLiteHelper;
 
 public class infofood extends AppCompatActivity {
 

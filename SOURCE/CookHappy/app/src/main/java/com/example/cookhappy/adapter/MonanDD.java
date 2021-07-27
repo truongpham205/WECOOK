@@ -1,4 +1,4 @@
-package com.example.cookhappy;
+package com.example.cookhappy.adapter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.cookhappy.R;
+import com.example.cookhappy.models.BuaAn;
+import com.example.cookhappy.activity.viewmonandd;
 
 import java.util.ArrayList;
 
@@ -33,7 +37,7 @@ public class MonanDD extends AppCompatActivity implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent=new Intent(this,viewmonandd.class);
+        Intent intent=new Intent(this, viewmonandd.class);
         startActivity(intent);
     }
 }
