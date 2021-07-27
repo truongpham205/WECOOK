@@ -40,7 +40,7 @@ public class Sflash extends AppCompatActivity implements Animation.AnimationList
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterNetworkReceiver();
+//        unregisterNetworkReceiver();
     }
 
     protected void registerNetworkReceiver() {
@@ -71,6 +71,7 @@ public class Sflash extends AppCompatActivity implements Animation.AnimationList
     public void onAnimationEnd(Animation animation) {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
+        finish();
     }
 
 
