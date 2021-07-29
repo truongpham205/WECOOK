@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.cookhappy.activity.AddThucDonActivity;
 import com.example.cookhappy.activity.Home;
 import com.example.cookhappy.activity.Login;
 import com.example.cookhappy.activity.MapsActivity;
@@ -32,6 +33,11 @@ public class nav extends AppCompatActivity {
     //Menu tìm kiếm: theo Bữa sáng, trức, tối.
     public void clickchebien(View view) {
         redirectActivity(this, Home.Lvplace.class);
+    }
+
+    //Menu tìm kiếm: theo Bữa sáng, trức, tối.
+    public void clickaddthucdon(View view) {
+        redirectActivity(this, AddThucDonActivity.class);
     }
 
     public void clickdd(View view) {
